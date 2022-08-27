@@ -28,7 +28,6 @@ def url_pages(url: str, count_pages: int):
         }
         session_requests = requests.Session()
         requests_content = session_requests.get(f'https://www.freepik.com/search?format=search&page={str(i)}&query=fabric%20care%20symbols&type=photo', headers=headers)
-        print(requests_content)
         pages.append(BeautifulSoup(requests_content.content))
         sleep(3)
     return pages
