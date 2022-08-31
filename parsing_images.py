@@ -1,22 +1,9 @@
-import re
-import json
-import sys
 from time import sleep
 
-from requests_html import HTMLSession
-
-import requests
-
-from tqdm import tqdm
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
 import fake_useragent
-import socks
-import socket
-import socks
-import socket
-# socks.set_default_proxy(socks.SOCKS5, "localhost", 9150)
-# socket.socket = socks.socksocket
+import requests
+from bs4 import BeautifulSoup
+from tqdm import tqdm
 
 USER_AGENT = fake_useragent.UserAgent()
 
